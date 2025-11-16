@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "Pedido" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "produto" TEXT NOT NULL,
+    "quantidade" INTEGER NOT NULL,
+    "cliente" TEXT NOT NULL,
+    "criadoEm" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
