@@ -1,8 +1,7 @@
-# Microsserviço da Página de Pedidos
+# API Pedidos
 
 API simples de gerenciamento de pedidos de vinhos, construída com Node.js, Express, Prisma ORM e SQLite.
 
-----
 
 ### Funcionalidades
 
@@ -12,6 +11,8 @@ API simples de gerenciamento de pedidos de vinhos, construída com Node.js, Expr
 - Deletar pedidos
 - Banco de dados local SQLite
 - Integração com Postman para testes
+
+----
 
 ### 1. Pré-requisitos
 
@@ -27,12 +28,14 @@ Para verificar:
 node -v
 npm -v
 ```
+---
 
 ### 2. Clonar o projeto
 ```
 git clone https://github.com/Recorder-FIAP/vinheria-pedidos.git
 cd vinheria_pedidos
 ```
+---
 
 ### 3. Instalar dependências
 ```
@@ -45,6 +48,7 @@ Isso instala:
 - prisma
 - @prisma/client
 
+---
 
 ### 4. Configurar o Prisma
 Criar o arquivo .env:
@@ -54,6 +58,7 @@ No diretório raiz:
 ```
 DATABASE_URL="file:./prisma/dev.db"
 ```
+---
 
 ### 5. Criar o banco de dados e migrations
 ```
@@ -65,6 +70,7 @@ Sempre que alterar o schema:
 ```
 npx prisma migrate dev --name update
 ```
+---
 
 ### 6. Visualizar o banco (SQLite)
 
@@ -79,6 +85,7 @@ Abre o painel em:
 ```
 http://localhost:5555
 ```
+---
 
 ### 7. Executar o servidor
 Node:
@@ -91,6 +98,7 @@ Servidor disponível em:
 ```
 http://localhost:3000
 ```
+---
 
 ### 8. Testar no Postman
 Criar um pedido (POST)
@@ -113,6 +121,7 @@ Listar pedidos (GET)
 ```
 http://localhost:3000/pedidos
 ```
+---
 
 ### Estrutura do projeto
 ```
@@ -126,6 +135,7 @@ vinheria_pedidos
     │
     └───migrations
 ```
+---
 
 ### Tecnologias usadas
 
